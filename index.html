@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jules' Daily Tech Scoop</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 🌟 Splash Screen -->
+  <div id="splash-screen">
+    <img src="jules.jpg" alt="Jules the mascot">
+    <h1>Welcome to Jules' Tech Buzz! 🧸</h1>
+    <p>Fetching the freshest bytes for you... 💻</p>
+  </div>
+
+  <!-- 🐣 Floating Mascot -->
+  <div id="jules-mascot">
+    <img src="jules.jpg" alt="Jules the mascot">
+    <div id="jules-bubble">Tech news just landed! 🚀</div>
+  </div>
+
+  <!-- 📰 Main Content -->
+  <div id="main-content" class="container" style="display: none;">
+    <header>
+      <h1>🧸 Jules' Daily Tech Scoop</h1>
+      <p id="date"></p>
+    </header>
+
+    <section id="news-section">
+      <h2>📢 Today's Tech Buzz</h2>
+      <ul id="news-list">
+        <p class="loading">Loading…</p>
+      </ul>
+    </section>
+
+    <section id="jules-comment">
+      <p>💬 Jules says <em id="jules-text">Stay tuned for Jules' reaction!</em></p>
+    </section>
+
+    <footer>
+      <p>🌸 Stay cute. Stay curious. See you tomorrow!</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Splash screen timeout
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("splash-screen").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+      }, 2500); // Show splash for 2.5 sec
+    });
+  </script>
+</body>
+</html>
